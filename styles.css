@@ -1,0 +1,149 @@
+/* additional recourses */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+:root {
+	--mainColor: #174c83;
+	--bottomBorder: 0.25rem solid #5e5e84;
+	--mainText: 1.2rem;
+	--secondaryText: 1rem;
+	--pText: 1.5rem;
+	--mainFont: "Roboto", sans-serif;
+}
+
+body {
+	background-color: var(--mainColor);
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Main Page Styles control area  */
+
+.mainPage {
+	background-image: url("background-image.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-position-x: center;
+	background-position-y: 25%;
+	height: 90vh;
+	border-bottom: var(--bottomBorder);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#mainLogo {
+	color: red;
+	font-size: 2.5rem;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	margin-top: 1rem;
+	text-decoration: wavy;
+}
+
+header {
+	margin-top: 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-family: var(--mainFont);
+	margin: 1rem;
+	font-size: var(--mainText);
+	padding: 0 16px 0 16px;
+}
+
+nav a:hover {
+	border: 1.5px solid white;
+	padding: 8px 15px 8px 15px;
+	border-radius: 5px;
+}
+
+.activeBtn {
+	border: 1.5px solid white;
+	padding: 8px 15px 8px 15px;
+	border-radius: 5px;
+}
+
+main h2 {
+	text-align: center;
+	border-bottom: var(--bottomBorder);
+	padding: 0.5rem 0 0.5rem 0;
+	margin: 0;
+	color: white;
+	text-transform: uppercase;
+	font-family: var(--mainFont);
+}
+
+.mainVideo-1 {
+	padding-top: 1rem;
+}
+
+.videoFrames,
+.videoText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.videoFrames iframe {
+	margin: 1rem 2.5rem 1rem 2.5rem;
+	border-radius: 15px;
+	border: var(--bottomBorder);
+}
+
+.videoFrames a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-family: var(--mainFont);
+	font-size: var(--secondaryText);
+	justify-items: center;
+	align-self: center;
+	border-bottom: none;
+	margin-bottom: 2rem;
+}
+
+footer h5 {
+	display: flex;
+	justify-content: center;
+	color: white;
+	padding: 1rem;
+	font-size: var(--secondaryText);
+	font-family: var(--mainFont);
+	text-transform: uppercase;
+}
+
+/* video upload page controls  */
+
+.videoUpload {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-self: center;
+	align-self: center;
+	color: white;
+	font-size: var(--secondaryText);
+}
+
+.publicRadioBtn,
+.privateRadioBtn {
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.uploadBtn {
+	color: white;
+	font-size: var(--secondaryText);
+	background-color: red;
+	border: 1.5px solid white;
+	height: 5vh;
+	margin-bottom: 1rem;
+}
+
+footer {
+	border-top: var(--bottomBorder);
+}

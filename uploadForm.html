@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyTube-homePage </title>
+
+  </head>
+
+  <body>
+    <div class="mainPage">
+      <Header>
+        <h1 id="mainLogo">MyTube</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="pages/stars.html"> The Biggest Stars</a>
+          <a href="pages/snowflakes.html">Snowflakes</a>
+          <a href="pages/cities.html">The Biggest Cities</a>
+          <a href="uploadForm.html" class="activeBtn">New Video</a>
+        </nav>
+      </Header>
+    </div>
+
+    <main class="videoUpload">
+      <h2>Add New Video</h2>
+
+      <br><br>
+
+      <label for="videoTitle"><strong>Video Title</strong></label> <br>
+      <input type="text" name="videoTitle" id="videoTitle" placeholder="Input value" size="31" required>
+
+      <br><br>
+
+      <label for="description"><strong>Description</strong></label> <br>
+      <textarea name="description" id="description" cols="30" rows="7" required></textarea>
+
+      <br><br>
+
+      <label for="video"><strong>Video</strong></label> <br>
+      <input type="file" name="video" id="video" required>
+
+      <br><br><br>
+
+      <label for="options"></label>
+      <select name="options" id="options" required>
+        <option>Choose Categories</option>
+        <option value="stars">Stars</option>
+        <option value="snowflakes">Snowflakes</option>
+        <option value="cities">Cities</option>
+      </select>
+
+      <br><br>
+
+      <div class="publicRadioBtn">
+        <input type="radio" name="radio" id="public">
+        <label for="radio">Public</label>
+      </div>
+
+      <div class="privateRadioBtn">
+        <input type="radio" name="radio" id="private">
+        <label for="radio">Private</label>
+      </div>
+
+      <br><br>
+
+      <button type="submit" class="uploadBtn">Upload Video</button>
+    </main>
+
+    <br>
+
+    <footer>
+      <h5 style="margin: 0"> &copy; Copyright</h5>
+    </footer>
+
+  </body>
+
+</html>
